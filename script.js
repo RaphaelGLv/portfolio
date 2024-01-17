@@ -11,5 +11,7 @@ const displayNavBar = () => {
 }
 
 const hideNavBar = () => {
-    navBar.style = "visibility: hidden; height: 0;"
+    setTimeout(() => {
+        navBar.style = "visibility: hidden; height: 0;"
+    }, 100);
 }

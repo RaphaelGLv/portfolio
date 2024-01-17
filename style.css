@@ -133,6 +133,10 @@ header {
 .nav-bar a:hover {
     color: var(--lightYellow);
     transition: 0.3s all;
+
+    @media (max-width: 767px) {
+        transition: none;
+    }
 }
 
 .contact-button {
