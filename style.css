@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,200&display=swap');
 
+:root {
+    --darkBlue: #001418;
+    --midBlue: #00343e;
+    --lightBlue: #a2c4c9;
+    --darkYellow: #edb104;
+    --lightYellow: #ffd966;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +25,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: #001418;
+    background-color: var(--darkBlue);
     width: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #edb104;
+    background-color: var(--darkYellow);
     border-radius: 20px;
 }
 
@@ -48,11 +56,11 @@ header {
     top: 0;
     z-index: 100;
 
-    background-color: #001418;
+    background-color: var(--darkBlue);
 
     @media (max-width: 500px) {
         justify-content: end;
-        gap: 0;
+        gap: 1rem;
     }
 }
 
@@ -82,7 +90,7 @@ header {
 }
 
 .horizontal-navbar-button:hover {
-    background-color: #00343e;
+    background-color: var(--midBlue);
 }
 
 .nav-bar {
@@ -110,7 +118,7 @@ header {
         left: 0rem;
         top: 3rem;
 
-        background-color: #001418;
+        background-color: var(--darkBlue);
 
         height: fit-content;
         padding: 1rem;
@@ -123,14 +131,14 @@ header {
 }
 
 .nav-bar a:hover {
-    color: #ffd966;
+    color: var(--lightYellow);
     transition: 0.3s all;
 }
 
 .contact-button {
-    color: #ffd966;
+    color: var(--lightYellow);
     background: transparent;
-    border: solid 1px #ffd966;
+    border: solid 1px var(--lightYellow);
     padding: 5px;
     border-radius: 15px;
     font-size: 12px;
@@ -139,9 +147,26 @@ header {
 }
 
 .contact-button:hover {
-    background-color: #ffd966;
-    color: #001418;
+    background-color: var(--lightYellow);
+    color: var(--darkBlue);
     transition: 0.3s;
+}
+
+.brazil-flag, .usa-flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    img {
+        height: 1.8rem;
+        width: auto;
+    }
 }
 
 .container-text {
@@ -157,7 +182,7 @@ header {
 }
 
 .text h1 span {
-    color: #ffd966;
+    color: var(--lightYellow);
 }
 
 .text h3 {
@@ -190,7 +215,7 @@ header {
 }
 
 .about-background {
-    background: #ffd966;
+    background: var(--lightYellow);
     height: fit-content;
     width: 100%;
     padding: 4rem 0;
@@ -232,7 +257,7 @@ header {
 
 .resume-background {
     color: aliceblue;
-    background-color: #00343e;
+    background-color: var(--midBlue);
     height: fit-content;
     width: 100%;
     padding: 3rem 0;
@@ -256,7 +281,7 @@ header {
 
 .resume h2 {
     width: fit-content;
-    border-bottom: solid 2px #ffd966;
+    border-bottom: solid 2px var(--lightYellow);
     font-size: 2vmax;
 }
 
@@ -284,7 +309,7 @@ header {
     padding: 10px;
 
     h3 {
-        color: #ffd966;
+        color: var(--lightYellow);
         font-size: 1.8vmax;
     }
 
@@ -306,13 +331,13 @@ header {
 }
 
 .projects-title {
-    color: #00343e;
+    color: var(--midBlue);
     height: 2rem;
     margin-left: 6%;
 }
 
 .projects-title h1 {
-    border-bottom: solid 2px #edb104;
+    border-bottom: solid 2px var(--darkYellow);
 
 }
 
@@ -354,7 +379,7 @@ header {
     width: 30%;
     padding: 1.5rem;
 
-    border: 2px solid #a2c4c9;
+    border: 2px solid var(--lightBlue);
     border-radius: 2rem;
 
     transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
@@ -370,7 +395,7 @@ header {
 
 .project:hover {
     transform: scale(1.05);
-    background-color: #a2c4c9;
+    background-color: var(--lightBlue);
 }
 
 .project-description {
@@ -378,7 +403,7 @@ header {
     word-wrap: break-word;
 
     h4 {
-        color: #00343e;
+        color: var(--midBlue);
         font-size: 1.8vmax;
     }
 
@@ -402,7 +427,7 @@ header {
 }
 
 .contact {
-    background-color: #001418;
+    background-color: var(--darkBlue);
     height: fit-content;
     width: 100%;
     display: inline-block;
@@ -414,7 +439,7 @@ header {
 .contact ul {
     margin-left: 6%;
     border-bottom: solid 2px aliceblue;
-    color: #ffd966;
+    color: var(--lightYellow);
     width: fit-content;
 }
 
@@ -454,7 +479,7 @@ header {
 }
 
 .maps:hover {
-    color: #edb104;
+    color: var(--darkYellow);
 }
 
 .whats:hover {
