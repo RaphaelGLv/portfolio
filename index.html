@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,29 @@
     <link rel="shortcut icon" href="images/icone2.ico" type="image/x-icon">
     <title>Raphael Leiva | Computer Sciense Student</title>
 </head>
+
 <body>
     <header>
-            <div class="nav-bar">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact"><button>Contact me</button></a>
-                </li>
-            </div>
+        <button class="horizontal-navbar-button" onclick="displayNavBar()" onblur="hideNavBar()">|||</button>
+        <ul class="nav-bar" id="nav-bar">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About me</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+        </ul>
+        <a href="#contact"><button class="contact-button">Contact me</button></a>
+        <a href="/pt-br"><img src="" alt=""></a>
     </header>
-    
-    <div class = "background" id="home">
+
+    <div class="background" id="home">
         <div class="container-text">
             <div class="text">
                 <h3>Hello,</h3>
@@ -38,77 +40,71 @@
                 <p>a computer science student at FCT-Unesp.</p>
                 <ul class="social-media">
                     <li>
-                        <a href="https://github.com/RaphaelGLv"><i class="fa-brands fa-github" style="color: #ffd966;"></i></a>
+                        <a href="https://github.com/RaphaelGLv"><i class="fa-brands fa-github"
+                                style="color: #ffd966;"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/rapha.glv"><i class="fa-brands fa-instagram" style="color: #ffd966;"></i></a>
+                        <a href="https://www.instagram.com/rapha.glv"><i class="fa-brands fa-instagram"
+                                style="color: #ffd966;"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/raphael-leiva/"><i class="fa-brands fa-linkedin-in" style="color: #ffd966;"></i></i></a>
+                        <a href="https://www.linkedin.com/in/raphael-leiva/"><i class="fa-brands fa-linkedin-in"
+                                style="color: #ffd966;"></i></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="about-background">
-        <section id="about">
-            <div class="infos">
-                <ul class="info-pic">
-                    <img class="profile-pic" src="images/profile.jpg" alt="Profile Picture">
-                </ul>
-                <ul class="info-text">
-                    <h3>About me</h3>
-                    <p>
-                        My name is Raphael and I live in São Paulo, Brazil.
-                        <br>Como eu ainda não fiz nada de útil na minha vida, esse portifólio
-                        <br>vai ter algumas das coisas que eu fiz e achei legal o suficiente pra
-                        <br>colocar aqui. A ideia é realmente arrumar e usar isso depois, mas,
-                        <br>por enquanto, divirtam-se com meus feitos inúteis.
-                    </p>
-                </ul>
-            </div>
-            <div class="info-cunhada">
-                <ul class="foto-cunhada">
-                    <img class="cunhada" src="images/cunhada.jpg" alt="Cunhada">
-                </ul>
-                <ul class="info-text-cunhada">
-                    <h3>Minha cunhada</h3>
-                    <p>Essa é minha cunhada, ela me obrigou a colocar a foto dela aqui.</p>
-                </ul>
-            </div>
-        </section>
-    </div>
+    <section class="about-background" id="about">
+        <div class="infos">
+            <img class="profile-pic" src="images/profile.jpg" alt="Profile Picture">
+            <ul class="info-text">
+                <h3>About me</h3>
+                <p>
+                    I'm a Computer Science student since 2023 at FCT-Unesp, but learning programming since 2019.
+                    Currently
+                    focusing on front-end development and eagering to learn back-end as well. Always loved to solve
+                    puzzles and finding different and better ways to solve a problem is what makes me love
+                    programming.
+                </p>
+            </ul>
+        </div>
+    </section>
 
     <div class="resume-background">
         <section class="resume" id="resume">
-            <div class="row-education">
+            <div class="content">
                 <h2>Education</h2>
-                <ul class="hard-text-education">
+                <ul class="hard-text">
                     <li>
-                        <h3>Introdução ao Python</h3>
-                        <p>Literalmente um curso aleatório que peguei de graça na Udemy.</p>
+                        <h3>Introduction to Python</h3>
+                        <p>Completed in 2019</p>
                     </li>
                     <li>
                         <h3>Harvard EDX - CS50</h3>
-                        <p>Esse ai eu so fiz metade, mas eu vou terminar (algum dia)</p>
+                        <p>In progress</p>
                     </li>
                     <li>
-                        <h3>XP educação - Python Bootcamp</h3>
-                        <p>Em progresso</p>
+                        <h3>XP education - Python Bootcamp</h3>
+                        <p>In progress</p>
                     </li>
                 </ul>
             </div>
-            <div class="row-works">
-                <h2>Works</h2>
-                <ul class="hard-text-works">
+            <div class="content">
+                <h2>Work experience</h2>
+                <ul class="hard-text">
                     <li>
-                        <h3>Gestor de Tráfego</h3>
+                        <h3>Front-End Developer</h3>
+                        <p>2023 - EJCOMP (actual)</p>
+                    </li>
+                    <li>
+                        <h3>Digital Marketing Manager</h3>
                         <p>2022 - Miah (Google & Pinterest)</p>
                         <p>2021 - Urban Farm (Google & Facebook)</p>
                     </li>
                     <li>
-                        <h3>Auxiliar administrativo</h3>
+                        <h3>Administrative Assistant</h3>
                         <p>2022 - Kacc na Converse Brasil</p>
                     </li>
                 </ul>
@@ -116,26 +112,51 @@
         </section>
     </div>
 
-    <div class="projects-background" id="projects">
-        <section class="projects">
-            <ul class="error">
-                <h1>Error 404</h1>
-            </ul>
-            <ul class="complemento">
-                <h3>projects not found...</h3>
-            </ul>
-        </section>
-    </div>
+    <section class="projects" id="projects">
+        <ul class="projects-title">
+            <h1>Projects</h1>
+        </ul>
+        <div class="projects-content">
+            <a class="project" href="https://github.com/RaphaelGLv/PokeDex" target="_blank">
+                <img src="images/pokedexProject-print.jpeg">
+                <div class="project-description">
+                    <h4>PokeDex</h4>
+                    <p>A PokeDex using Angular v17 and PokeApi</p>
+                </div>
+            </a>
+            <a class="project" href="https://github.com/RaphaelGLv/webDevProject" target="_blank">
+                <img src="images/atpProject-print.jpeg">
+                <div class="project-description">
+                    <h4>APT-II Project</h4>
+                    <p>A binary score of a fictional E-Sports championship using C</p>
+                </div>
+            </a>
+            <a class="project" href="https://github.com/RaphaelGLv/ATPII-FP" target="_blank">
+                <img src="images/webDevProject-print.jpeg">
+                <div class="project-description">
+                    <h4>WebDev Project</h4>
+                    <p>An online pet shop store prototype using NextJS</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <div class="contact" id="contact">
-        <ul>    
+        <ul>
             <h3>Adresses and Phone</h3>
         </ul>
         <li>
-            <a class="email" href="https://encurtador.com.br/ajIU6"><i class="fa-solid fa-envelope" style="color: #cd3a2f;"></i> <br> <br> r.leiva@unesp.br</a>
-            <a class="maps" href="https://goo.gl/maps/va97tnrnPz9FAL3d6"><i class="fa-sharp fa-solid fa-location-dot" style="color: #edb104;"></i> <br> <br> São Paulo / Brazil, 19025-830</a>
-            <a class="whats" href="https://wa.me/5518988117578"><i class="fa-brands fa-whatsapp" style="color: #0dc143;"></i> <br> <br> +55 (18) 98811-7578</a>
+            <a class="email"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnptqKScNfhnwXnClLJnBFHhgSFhslrWtDlHgHVfmstTLXpfJvTHMjsfPWcjRZMNHNrsNt"><i
+                    class="fa-solid fa-envelope" style="color: #cd3a2f;"></i>r.leiva@unesp.br</a>
+            <a class="maps" href="https://goo.gl/maps/va97tnrnPz9FAL3d6"><i class="fa-sharp fa-solid fa-location-dot"
+                    style="color: #edb104;"></i>São Paulo / Brazil, 19025-830</a>
+            <a class="whats" href="https://wa.me/5518988117578"><i class="fa-brands fa-whatsapp"
+                    style="color: #0dc143;"></i>+55 (18) 98811-7578</a>
         </li>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
